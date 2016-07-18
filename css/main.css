@@ -1,0 +1,202 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+html.js .loader {
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+html.js .loader_inner {
+	background-image: url("../img/preloader.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	font-family: "RobotoRegular", sans-serif;
+	overflow-x: hidden;
+}
+.hidden {
+	display: none;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+.area {
+    background: #00ff21;
+    border: 2px solid #000;
+    border-radius: 10px;
+    height: 444px;
+    margin: 20px auto 25px;
+    overflow: hidden;
+    position: relative;
+    width: 1204px;
+}
+.block {
+	border: 1px solid #000;
+	border-radius: 4px;
+	position: absolute;
+}
+.ball {
+    border-radius: 100%;
+    -webkit-box-shadow: 5px 5px 32px 0 rgba(212,21,59,1);
+       -moz-box-shadow: 5px 5px 32px 0 rgba(212,21,59,1);
+    		box-shadow: 5px 5px 32px 0 rgba(212,21,59,1);
+	background: url(../img/apple2.png) no-repeat center;
+    height: 50px;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 50px;
+}
+.board {
+	background: #00f;
+	background: #18f0a8;
+	background: -moz-linear-gradient(top, #18f0a8 0%, #499bea 41%, #000be3 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, #18f0a8), color-stop(41%, #499bea), color-stop(100%, #000be3));
+	background: -webkit-linear-gradient(top, #18f0a8 0%, #499bea 41%, #000be3 100%);
+	background: -o-linear-gradient(top, #18f0a8 0%, #499bea 41%, #000be3 100%);
+	background: -ms-linear-gradient(top, #18f0a8 0%, #499bea 41%, #000be3 100%);
+	background: linear-gradient(to bottom, #18f0a8 0%, #499bea 41%, #000be3 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#18f0a8', endColorstr='#000be3', GradientType=0 );
+	border: 2px solid #000;
+	border-radius: 0 0 10px 10px;
+	bottom: 0;
+	height: 35px;
+	left: 0;
+	position: absolute;
+	width: 160px;
+}
+.lifes {
+	position: absolute;
+	left: 134px;
+	top: 28px;
+}
+.life {
+	background: url(../img/apple5.png) no-repeat;
+	display: inline-block;
+	margin-right: 5px;
+	height: 29px;
+	width: 30px;
+}
+.glove {
+	background: url(../img/glove3.png) no-repeat;
+	display: none;
+	height: 33px;
+	width: 45px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.rocket {
+	background: url(../img/rocket1.png) no-repeat;
+	display: none;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.bomb {
+	background: url(../img/bomb1.png) no-repeat;
+	display: none;
+	height: 34px;
+	width: 40px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.game-over {
+	display: none;
+	font-family: "NautilusPompiliusRegular", "RobotoRegular", sans-serif;
+	font-size: 89px;
+	font-weight: bold;
+	opacity: 0;
+	position: absolute;
+	text-shadow: 10px 10px 20px #333;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translate(-50%);
+	-ms-transform: translate(-50%);
+	-o-transform: translate(-50%);
+	transform: translate(-50%);
+}
+
+.buttons {
+	/*display: block;*/
+	position: relative;
+	text-align: center;
+}
+.start-game, .stop-game, .refresh {
+    background: #f7ff00;
+    border: 2px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    /*display: block;*/
+    font-size: 24px;
+    /*margin: 0 auto;*/
+    padding: 4px 90px;
+}
+button[disabled] {
+	background: #c7cc43;
+}
+.stop-game, .refresh {
+	display: none;
+}
+.stats {
+	font-family: "NautilusPompiliusRegular", "RobotoRegular", sans-serif;
+	font-weight: bold;
+	line-height: 30px;
+	left: 60px;
+	letter-spacing: 2.5px;
+	position: absolute;
+	text-align: left;
+}
+.coords {
+    margin: 20px 0 0;
+    text-align: center;
+}
+.data {
+	text-align: center;
+}
+
